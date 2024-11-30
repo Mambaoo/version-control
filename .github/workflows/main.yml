@@ -37,10 +37,8 @@ jobs:
           push: true
           tags: mambaoo936/backup-program:1.0
 
-          - name: Save Logs as Artifact
-            uses: actions/upload-artifact@v3
-            with:
-            name: backup-log
-            path: backup_log.txt
-
-
+      - name: Save Logs as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: backup-log
+          path: backup_log.txt
