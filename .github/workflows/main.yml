@@ -24,10 +24,10 @@ jobs:
 
     - name: Run Backup Program
       run: |
-        python backup.py > backup_log.txt  # Menjalankan backup.py dan menyimpan output log
+        python backup.py > backup_log.txt
 
     - name: Save Logs as Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: backup-log  # Nama artefak
-        path: backup_log.txt  # Path ke file log atau output lainnya
+        name: backup-log  
+        path: backup_log.txt 
