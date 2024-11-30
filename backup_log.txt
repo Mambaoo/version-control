@@ -1,0 +1,11 @@
+2024-11-28 22:26:25,437 - ERROR - Terjadi kesalahan saat backup: endswith first arg must be str or a tuple of str, not list
+2024-11-28 22:27:53,677 - INFO - Backup berhasil! 4 file disalin ke folder cadangan: D:\MSIB\backup-python\backup_20241128_222753
+2024-11-28 22:29:09,743 - INFO - Backup berhasil! 9 file disalin ke folder cadangan: D:\MSIB\backup-python\backup_20241128_222909
+2024-11-28 22:32:57,304 - WARNING - Tidak ada file yang disalin. Mungkin tidak ada file yang cocok dengan filter ekstensi.
+2024-11-28 22:34:25,814 - INFO - Backup berhasil! 9 file disalin ke folder cadangan: D:\MSIB\backup-python\backup_20241128_223425
+2024-11-28 22:35:36,918 - INFO - Backup berhasil! 9 file disalin ke folder cadangan: D:\MSIB\Backup Python\backup_20241128_223536
+2024-11-28 22:41:23,363 - WARNING - Tidak ada file yang disalin. Mungkin tidak ada file yang cocok dengan filter ekstensi.
+2024-11-28 22:41:38,482 - INFO - Backup berhasil! 4 file disalin ke folder cadangan: D:\\MSIB\\Backup Python\backup_20241128_224138
+2024-11-28 22:45:01,899 - INFO - Backup berhasil! 4 file disalin ke folder cadangan: D:\\MSIB\\Backup Python\backup_thursday_28_11_2024
+2024-11-28 23:06:49,637 - INFO - Backup berhasil! 133 file disalin ke folder cadangan: D:\\MSIB\\Backup Python\backup_thursday_28_11_2024
+2024-11-29 00:12:23,847 - INFO - Backup berhasil! 133 file disalin ke folder cadangan: D:\\MSIB\\Backup Python\backup_friday_29_11_2024
