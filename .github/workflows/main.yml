@@ -1,44 +1,33 @@
-name: CI Workflow
+name: Python CI/CD Workflow
 
 on:
   push:
     branches:
-      - main
+      - main  # Workflow ini berjalan saat ada perubahan di branch "main"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
 
-      - name: Run tests
-        run: |
-          python -m unittest
+    - name: Run Backup Program
+      run: |
+        python backup.py > backup_log.txt  # Menjalankan backup.py dan menyimpan output log
 
-      - name: Log in to DockerHub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Build and Push Docker Image
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: mambaoo936/backup-program:1.0
-
-      - name: Save Logs as Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: backup-log
-          path: backup_log.txt
+    - name: Save Logs as Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: backup-log  # Nama artefak
+        path: backup_log.txt  # Path ke file log atau output lainnya
